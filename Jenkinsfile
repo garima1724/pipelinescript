@@ -10,7 +10,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                bat 'calc.bat'
+                bat label: '', script: 'calc.sh'
             }
         }
         stage('Test') {
